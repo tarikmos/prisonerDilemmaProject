@@ -1,10 +1,28 @@
 package prisonier;
 
+import PackageFilter.AlwaysCooperate;
+
 public class main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		boolean didCooperate() // reponse du prisonier à l'autorité
 		
 		void setSecondAnswer(boolean second_cooperated) //l'autorité informe le prisonier de la reponse de l'autre prisonier

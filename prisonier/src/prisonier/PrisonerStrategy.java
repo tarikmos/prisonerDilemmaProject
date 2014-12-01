@@ -1,9 +1,8 @@
 package prisonier;
 
-public class PrisonerStrategy {
+public interface PrisonerStrategy {
 
-	AlwaysCooperate
-	
-	NeverCooperate
+	boolean didCooperate()  ;
+	void setSecondAnswer(boolean second_cooperated);
 	
 }

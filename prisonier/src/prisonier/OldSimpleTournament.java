@@ -9,7 +9,8 @@ public class OldSimpleTournament {
 
 public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	
+		Scanner sc = new Scanner(System.in); // variable de type scanner se qui permet de lire ce que nous tappons au clavier
+	       
 	int numStrategie = 0; // variable pour le choix de la stratégie
 	String nomStrategie = new String("adel");  
 	
@@ -17,10 +18,10 @@ public static void main(String[] args) {
 	String nomPrisonnier2 = new String("adel2"); 
 	int tour=0;
 	
-	Scanner sc = new Scanner(System.in); // variable de type scanner se qui permet de lire ce que nous tappons au clavier
-	Scanner sc1 = new Scanner(System.in);
-	Scanner sc2 = new Scanner(System.in);
-	Scanner sc3 = new Scanner(System.in);
+
+ Prisonnier p1 = new Prisonnier();
+ p1.setNomPrisonnier(nomPrisonnier1); 	
+ 
 	
 		System.out.println("choisir le numero des deux stratégies a tester  "
 				+ "\n 1- AlwaysCooperate  "
@@ -52,16 +53,16 @@ public static void main(String[] args) {
 		// partie en plus pour prisonniers 
 		
 		System.out.println("entrez le nom du 1er prisonnier ");
-		nomPrisonnier1 = sc1.nextLine();
+		nomPrisonnier1 = sc.nextLine();
 		Prisonnier sam= new Prisonnier(nomPrisonnier1);
 		
 		System.out.println("entrez le nom du 2eme prisonnier ");
-		nomPrisonnier2 = sc2.nextLine();		
+		nomPrisonnier2 = sc.nextLine();		
 		Prisonnier Louis = new Prisonnier(nomPrisonnier2); 
 		/////// defenir le nombre de tours 
 		
 		System.out.println("ecombien de tours ? ");
-		tour = sc3.nextInt();
+		tour = sc.nextInt();
 		////// partie du jeu 
 		
 		for (int i=0;i<tour;i++)
@@ -74,8 +75,6 @@ public static void main(String[] args) {
 		// payoff
 		double payoff;
 		
-		if(p1)
-		
-	}
+}
 
 }

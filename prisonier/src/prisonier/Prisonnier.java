@@ -3,26 +3,25 @@ package prisonier;
 import java.util.Scanner;
 
 public class Prisonnier {
-	String nomPrisonnier;
-	double gain;
-	///
-	Scanner sc = new Scanner(System.in);
+	 private String name;
+	
+	private double gayoffs;
+ 
+	 
 	int numStrategie = 0; // variable pour le choix de la stratégie
 	String nomStrategie = new String("adel");  
 	
-	//Constructeur par défaut d'un prisonnier
+	//Default construct 
 	public Prisonnier() {
-		nomPrisonnier="inconnu";
-		
-		System.out.println("capture du prisonnier "+nomPrisonnier+"!");
-		
-	}
+ }
 	
-	//Constructeur par avec parammetres d'un prisonnier
+	//Constructor
 	public Prisonnier(String pNom) {
-		nomPrisonnier=pNom;
+		this.name=pNom;
 		
-		System.out.println("capture du prisonnier "+nomPrisonnier+"!");
+		
+		
+		System.out.println("capture du prisonnier "+name+"!");
 		
 /////////////////////////////////////////////////		
 ///////////////////////////////////////////////// type de strategie qu'adopte le prisonnier 
@@ -56,6 +55,38 @@ public class Prisonnier {
 		
 	}
 
-	
+	public String getNomPrisonnier() {
+		return name;
+	}
+
+	public double getGain() {
+		return payoffs;
+	}
+
+	public int getNumStrategie() {
+		return numStrategie;
+	}
+
+	public String getNomStrategie() {
+		return nomStrategie;
+	}
+
+	public void setNomPrisonnier(String nomPrisonnier) {
+		this.nomPrisonnier = nomPrisonnier;
+	}
+
+	public void setGain(double gain) {
+		this.gain = gain;
+	}
+
+	public void setNumStrategie(int numStrategie) {
+		this.numStrategie = numStrategie;
+	}
+
+	public void setNomStrategie(String nomStrategie) {
+		this.nomStrategie = nomStrategie;
+	}
+
+ 
 	
 }
